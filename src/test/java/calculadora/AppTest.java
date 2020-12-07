@@ -5,15 +5,14 @@ package calculadora;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-// import org.junit.Before;
+import org.junit.Before;
 
 public class AppTest {
     Calculadora c;
 
-  //  @Before void setUp() {
-  //      c = new Calculadora();
-  //  }
+    @Before public void setUp() {
+      c = new Calculadora();
+    }
 
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
@@ -21,7 +20,7 @@ public class AppTest {
     }
 
     @Test public void testSuma() {
-        Calculadora c = new Calculadora();
+//      Calculadora c = new Calculadora();
         assertTrue(c.suma(2,3)==5);
     }
 }
