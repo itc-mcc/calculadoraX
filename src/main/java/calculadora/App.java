@@ -4,14 +4,9 @@
 package calculadora;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
         Calculadora c = new Calculadora();
-
-        System.out.println(new App().getGreeting());
 
         System.out.println("CALCULADORA");
         System.out.println("===========");
