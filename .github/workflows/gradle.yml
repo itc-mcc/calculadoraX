@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-
+    name: compilacion
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +26,10 @@ jobs:
       run: ./gradlew build
   run:
     needs: [build]
-
+    
+    if: always()
+    
+    name: ejecucion
     runs-on: ubuntu-latest
 
     steps:
